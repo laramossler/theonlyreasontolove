@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Only Reason to Love</title>
+<meta property="og:title" content="The Only Reason to Love">
+<meta property="og:description" content="Poems by Lara Mossler · Valentine's Day, 2026">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F1E8;
+    --text: #2C2420;
+    --muted: #A09688;
+    --faint: #C4BAB0;
+    --surround: #2C2420;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%; overflow: hidden; background: var(--surround);
+  }
+  body {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .page {
+    width: 100%; height: 100%; max-width: 480px; max-height: 720px;
+    background: var(--bg); display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 10% 10%;
+    position: relative;
+  }
+  @media (min-width: 520px) {
+    .page { border-radius: 2px; box-shadow: 0 1px 4px rgba(44,36,32,0.15), 0 8px 24px rgba(44,36,32,0.1); }
+  }
+  @media (max-width: 519px) { .page { max-width: 100%; max-height: 100%; } }
+
+  h1 {
+    font-weight: 300; font-style: italic; font-size: 1.5rem; line-height: 1.45;
+    text-align: center; letter-spacing: 0.03em; color: var(--text);
+    margin-bottom: 0.6rem;
+    opacity: 0; animation: fadeIn 2.5s ease 0.5s forwards;
+  }
+  .author {
+    font-size: 0.7rem; font-weight: 300; color: var(--muted);
+    letter-spacing: 0.14em; text-align: center;
+    opacity: 0; animation: fadeIn 2s ease 1.5s forwards;
+  }
+  .divider {
+    width: 20px; height: 1px; background: var(--faint); margin: 2.2rem 0;
+    opacity: 0; animation: fadeIn 1.5s ease 2.5s forwards;
+  }
+  .epigraph {
+    font-style: italic; font-weight: 300; font-size: 0.78rem;
+    color: var(--muted); text-align: center; line-height: 2.1;
+    max-width: 260px;
+    opacity: 0; animation: fadeIn 2s ease 3.2s forwards;
+  }
+  .release {
+    margin-top: 2.4rem;
+    font-size: 0.56rem; font-weight: 300; font-style: italic;
+    color: var(--faint); letter-spacing: 0.1em; text-align: center;
+    opacity: 0; animation: fadeIn 2s ease 4s forwards;
+  }
+  .footnote {
+    margin-top: 1.2rem;
+    font-size: 0.52rem; font-weight: 300; font-style: italic;
+    color: var(--faint); letter-spacing: 0.06em; text-align: center;
+    line-height: 1.9;
+    opacity: 0; animation: fadeIn 2s ease 5s forwards;
+  }
+  .footnote a {
+    color: var(--muted); text-decoration: none;
+    border-bottom: 1px solid var(--faint);
+    transition: border-color 0.3s;
+  }
+  .footnote a:hover { border-color: var(--muted); }
+  @keyframes fadeIn { to { opacity: 1; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>The Only Reason<br>to Love</h1>
+  <div class="author">Lara Mossler</div>
+
+  <div class="divider"></div>
+
+  <div class="epigraph">
+    What if the only reason to love<br>
+    is to be completely destroyed
+  </div>
+
+  <div class="release">Valentine's Day, 2026</div>
+
+  <div class="footnote">
+    subscribe to <a href="https://signalandnoise1.beehiiv.com/" target="_blank">Dispatches from White Salmon</a><br>
+    to receive it
+  </div>
+</div>
+
+<script>
+var hour = new Date().getHours();
+if (hour < 6 || hour > 21) {
+  document.documentElement.style.setProperty('--bg','#EBE5DA');
+  document.documentElement.style.setProperty('--surround','#1A1614');
+} else if (hour > 18) {
+  document.documentElement.style.setProperty('--bg','#F0E9DE');
+  document.documentElement.style.setProperty('--surround','#211D19');
+} else if (hour < 9) {
+  document.documentElement.style.setProperty('--bg','#FAF5ED');
+  document.documentElement.style.setProperty('--surround','#302A24');
+}
+</script>
+</body>
+</html>
